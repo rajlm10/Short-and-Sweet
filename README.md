@@ -9,7 +9,7 @@ Here is the text before summarization :
 
  
 
-![Original](./docs/images/result.png) 
+![Original](./docs/images/original.png) 
 
 Here is the text after summarization :
 
