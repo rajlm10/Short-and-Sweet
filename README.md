@@ -1,6 +1,6 @@
-# Abridge
+# Short and Sweet
 
-Abridge is an extractive text summarizer which incorporates Google's Word2Vec embeddings and a few linear algebra operations. The summarizer returns a non-repetitive, concise summary of a piece of text. Abridge uses Flask to render the UI. 
+Short and Sweet is an extractive text summarizer which incorporates Google's Word2Vec embeddings and a few linear algebra operations. The summarizer returns a non-repetitive, concise summary of a piece of text. Short and Sweet uses Flask to render the UI. 
 
 
 ## Results
