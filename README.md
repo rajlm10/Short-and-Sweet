@@ -17,6 +17,13 @@ Here is the text after summarization :
 
 ![Summary](./docs/images/result2.png) 
 
+## The neural network
+Please look at **NLP.ipynb** for the Neural network model which generates the word embedding templates (not used in final model) and follows the word2vec algorithm.
+
+Our architecture involves a 3 layer neural network. We have decided to construct this purely in numpy. Our inputs are batches of sentences in the corpus after preprocessing. We choose the centre word as our y(i) for an example. The X(i) is the average of the context words for that particular center word. X(i) is the average of C context words before and C context words after the center word where C is the context window size which is 2 in our example.
+The neural network uses ReLU functions as activations to introduce non-linearity. Our result is the average of both the weights in our model. The middle layer has N units where N is the dimension of our embeddings.  The final weights after training can be averaged to provide a matrix of size V X N where V is our vocabulary and N is the embedding dimension. The final layer has a softmax to predict one of the V possible words.
+
+
 ## Installations and Downloads
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the dependencies.
@@ -41,6 +48,8 @@ You can delete the **GoogleNews-vectors-negative300.bin.gz** file after the **di
 - The **templates** directory contains the **HTML** files used by the flask server.
 
 - The **static** directory contains the **CSS** files used by the flask server.
+
+- Please look at **NLP.ipynb** for the Neural network model which generates the word embedding templates (not used in final model) and follows the word2vec algorithm (CBOW) .
 
 
 ## Usage
